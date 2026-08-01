@@ -1,8 +1,25 @@
 aid: sof-a
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sof-a.png
 name: Sofía
-description: 'Sofía is a company surfaced as a portfolio company of index-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Sofía is a 100% Mexican health insurance company (aseguradora) offering
+  medical coverage for individuals, families, and businesses, delivered primarily
+  through a mobile app with plans that carry no deductibles. Regulated in Mexico by
+  the CNSF, Secretaría de Salud, and CONDUSEF, and backed by Index Ventures. This
+  is a consumer/enterprise insurance provider surfaced as a portfolio-company lead;
+  a live probe of the public surface found no developer program, API, or /.well-known/
+  discovery documents, so this profile remains identity-only pending any future API
+  exposure.'
 url: https://raw.githubusercontent.com/api-evangelist/sof-a/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthcare
+- Health Insurance
+- Insurance
+- Mexico
+- InsurTech
+- Digital Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sof-a-domain-security.yml
 - type: Website
-  url: http://sofiasalud.com
+  url: https://www.sofiasalud.com
+- type: Blog
+  url: https://www.sofiasalud.com/blog
+- type: Support
+  url: https://www.sofiasalud.com/otros/preguntas-frecuentes-sofia
+- type: SignUp
+  url: https://cotiza.sofiasalud.com/
+- type: TermsOfService
+  url: https://www.sofiasalud.com/otros/terminos-y-condiciones
+- type: PrivacyPolicy
+  url: https://www.sofiasalud.com/otros/aviso-de-privacidad
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
